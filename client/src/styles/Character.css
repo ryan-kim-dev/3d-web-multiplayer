@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+.character-name > div {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 20px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.character-name > div {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.character-name .name {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2px 12px;
+  border-radius: 4px;
+  user-select: none;
+  white-space: nowrap;
+  font-size: 1em;
+}
+.character-name .talk {
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #2c3e50;
+  padding: 2px 10px;
+  border-radius: 4px;
+  user-select: none;
+  white-space: nowrap;
+  font-size: 0.9em;
+  margin-left: 0.2em;
+  width: max-content;
+
+  /* 현재 채팅 메세지를 더 잘 보이도록 표시하는 효과 */
+  opacity: 0;
+  animation-name: talk-animation;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes talk-animation {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.1);
+  }
+
+  30% {
+    transform: scale(10);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
