@@ -1,17 +1,2 @@
-프론트: 5173
-백엔드: 3001
-
-```zsh
-# 한번에 실행시키고 싶을 경우
-cd server
-npm run dev # 백엔드 서버 실행과 동시에 리액트 클라이언트 실행
-
-# 따로 실행시키고 싶을 경우
-# 프론트
-cd client
-npm run dev
-
-# 백엔드
-cd server
-npm run backend
-```
+`main` 브랜치: ts 컨버젼 및 배포 실습용
+`original` 브랜치: 기존 강의 실습코드
